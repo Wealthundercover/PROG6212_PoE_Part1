@@ -1,0 +1,23 @@
+name: Documentation & SQL Validation
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Check Required Files
+      run: |
+        echo "Verifying project structure..."
+        test -f docs/erd_diagram.png || (echo "Missing ERD diagram" && exit 1)
+        test -f docs/api_endpoint_plan.md || (echo "Missing API Plan" && exit 1)
+        test -f docs/RaceDay_Database_Script.sql || (echo "Missing SQL Script" && exit 1)
+        echo "All Part 1 technical assets verified successfully!"
