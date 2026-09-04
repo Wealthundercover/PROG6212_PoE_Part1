@@ -17,7 +17,7 @@ All planning and database assets are located in the `/docs` folder:
 * `RaceDay_Database_Script.sql`: Complete SQL Server script with schema creation, constraints, and realistic seed data.
 
 ## Video Presentation
-[Click here to watch the Video Presentation]((https://youtube.com/shorts/NRz5mpCMPxc?si=b0Ifq47R1GCRHoBg))
+[Click here to watch the Video Presentation](https://youtube.com/shorts/NRz5mpCMPxc?si=b0Ifq47R1GCRHoBg)
 
 ## CI/CD Pipeline
 ![Build Status](../../workflows/docs-validation.yml/badge.svg)
