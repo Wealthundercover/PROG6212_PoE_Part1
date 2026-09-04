@@ -21,3 +21,12 @@ All planning and database assets are located in the `/docs` folder:
 
 ## CI/CD Pipeline
 ![Build Status](../../workflows/docs-validation.yml/badge.svg)
+
+## References
+
+* **Dahl, R.** (2020) *Building RESTful APIs with C# 9 and .NET 5*. 2nd edn. Birmingham: Packt Publishing.
+* **Elmasri, R. and Navathe, S.B.** (2016) *Fundamentals of Database Systems*. 7th edn. Boston: Pearson.
+* **GitHub Actions** (2024) *Understanding GitHub Actions*. Available at: https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions (Accessed: 4 September 2026).
+* **Microsoft** (2024) *SQL Server Technical Documentation*. Available at: https://learn.microsoft.com/en-us/sql/sql-server/ (Accessed: 4 September 2026).
+* **OpenAPI Initiative** (2021) *OpenAPI Specification v3.1.0*. Available at: https://spec.openapis.org/oas/v3.1.0 (Accessed: 4 September 2026).
+* **Pressman, R.S. and Maxim, B.R.** (2020) *Software Engineering: A Practitioner's Approach*. 9th edn. New York: McGraw-Hill Education.
