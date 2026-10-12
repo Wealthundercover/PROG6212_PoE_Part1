@@ -210,6 +210,6 @@ namespace RaceDay.API.Migrations
 
             migrationBuilder.DropTable(
                 name: "Roles");
-        }
+        } 
     }
 }
