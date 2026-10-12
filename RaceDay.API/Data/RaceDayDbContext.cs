@@ -20,7 +20,7 @@ namespace RaceDay.API.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Configure unique constraints or indexes if needed
+            /// Configure unique constraints or indexes if needed
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Email)
                 .IsUnique();
