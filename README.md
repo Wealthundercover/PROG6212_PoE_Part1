@@ -53,6 +53,10 @@ Part 2 implements the complete backend RESTful Web API using **.NET 8** and **En
    Open the **Package Manager Console** in Visual Studio and run:
    ```powershell
    Update-Database
+   
+### API Testing Screenshots
+![Swagger Endpoints](docs/screenshots/swagger.png)
+![Database Execution](docs/screenshots/database.png)
 ## Video Presentation part 1
 [Click here to watch the Video Presentation](https://youtube.com/shorts/NRz5mpCMPxc?si=b0Ifq47R1GCRHoBg)
 
