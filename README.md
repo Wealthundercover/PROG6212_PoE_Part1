@@ -67,3 +67,9 @@ Part 2 implements the complete backend RESTful Web API using **.NET 8** and **En
 * **Microsoft** (2024) *SQL Server Technical Documentation*. Available at: https://learn.microsoft.com/en-us/sql/sql-server/ (Accessed: 4 September 2026).
 * **OpenAPI Initiative** (2021) *OpenAPI Specification v3.1.0*. Available at: https://spec.openapis.org/oas/v3.1.0 (Accessed: 4 September 2026).
 * **Pressman, R.S. and Maxim, B.R.** (2020) *Software Engineering: A Practitioner's Approach*. 9th edn. New York: McGraw-Hill Education.
+
+* **Freeman, A.** (2022) *Pro ASP.NET Core 6: Develop Cloud-Ready Web Applications Using MVC, Blazor, and Web API*. 9th edn. New York: Apress.
+* **Microsoft.** (2024) *ASP.NET Core Web API documentation*. Available at: https://learn.microsoft.com/en-us/aspnet/core/web-api/ (Accessed: 12 October 2026).
+* **Microsoft.** (2024) *Overview of Entity Framework Core*. Available at: https://learn.microsoft.com/en-us/ef/core/ (Accessed: 12 October 2026).
+* **Richardson, L. and Ruby, S.** (2007) *RESTful Web Services*. Sebastopol: O'Reilly Media.
+* **SmartBear Software.** (2024) *Swagger / OpenAPI Documentation*. Available at: https://swagger.io/docs/ (Accessed: 12 October 2026).
