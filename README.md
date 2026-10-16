@@ -56,7 +56,7 @@ Part 2 implements the complete backend RESTful Web API using **.NET 8** and **En
    
 ### API Testing Screenshots
 ![Swagger Endpoints](docs/screenshots/Swagger.UI.png)
-![Database Execution](docs/screenshots/API EVENTS TEST.png)
+![Database Execution] (docs/screenshots/API EVENTS TEST.png)
 ## Video Presentation part 1
 [Click here to watch the Video Presentation](https://youtube.com/shorts/NRz5mpCMPxc?si=b0Ifq47R1GCRHoBg)
 
