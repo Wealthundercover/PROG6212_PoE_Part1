@@ -60,6 +60,10 @@ Part 2 implements the complete backend RESTful Web API using **.NET 8** and **En
 ## Video Presentation part 1
 [Click here to watch the Video Presentation](https://youtube.com/shorts/NRz5mpCMPxc?si=b0Ifq47R1GCRHoBg)
 
+## Video Presentation part 2
+[Click here to watch the Video Presentation] (https://youtu.be/4TQ0Lp1THFI?si=le0M6R6CrGg0Cfrz)
+
+
 ## CI/CD Pipeline
 ![Build Status](../../workflows/docs-validation.yml/badge.svg)
 
