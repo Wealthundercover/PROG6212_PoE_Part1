@@ -20,7 +20,12 @@ namespace RaceDay.API.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            /// Configure unique constraints or indexes if needed
+            // Allow explicit manual ID seeding for Roles (prevents identity insert errors)
+            modelBuilder.Entity<Role>()
+                .Property(r => r.RoleId)
+                .ValueGeneratedNever();
+
+            // Configure unique constraints or indexes if needed
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Email)
                 .IsUnique();
@@ -35,7 +40,7 @@ namespace RaceDay.API.Data
                 .HasOne(e => e.User)
                 .WithMany(u => u.Enrolments)
                 .HasForeignKey(e => e.UserId)
-                .OnDelete(DeleteBehavior.Restrict); // Prevent cascade delete cycle
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Enrolment>()
                 .HasOne(e => e.Event)
