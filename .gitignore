@@ -1,2 +1,6 @@
 .vs/
 /RaceDay.API/bin/Debug/net8.0
+/RaceDay.API/obj
+/RaceDay.MVC/bin/Debug
+/RaceDay.MVC/obj/Debug
+/RaceDay.MVC/obj
