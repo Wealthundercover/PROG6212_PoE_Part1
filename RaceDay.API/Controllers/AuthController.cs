@@ -18,8 +18,21 @@ namespace RaceDay.API.Controllers
 
         // POST: api/Auth/register
         [HttpPost("register")]
-        public async Task<ActionResult<User>> Register(User user)
+        public async Task<ActionResult<User>> Register([FromBody] User user)
         {
+            // Fallback: If RoleId wasn't passed or is 0, default to Participant (ID 2)
+            if (user.RoleId == 0)
+            {
+                user.RoleId = 2;
+            }
+
+            // Verify the role actually exists in the database before saving
+            bool roleExists = await _context.Roles.AnyAsync(r => r.RoleId == user.RoleId);
+            if (!roleExists)
+            {
+                return BadRequest(new { message = $"The provided RoleId ({user.RoleId}) does not exist in the database." });
+            }
+
             // Simple registration endpoint for PoE part requirements
             _context.Users.Add(user);
             await _context.SaveChangesAsync();

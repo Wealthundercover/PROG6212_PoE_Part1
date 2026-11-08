@@ -1,0 +1,64 @@
+@model RaceDay.MVC.Models.CreateEventViewModel
+
+@{
+    ViewData["Title"] = "Create Event";
+}
+
+<div class="row justify-content-center mt-4">
+    <div class="col-md-8">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-primary text-white py-3">
+                <h4 class="mb-0 fw-bold">🏎️ Create New Race Event</h4>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="CreateEvent" method="post" enctype="multipart/form-data">
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label fw-semibold">Event Name</label>
+                        <input asp-for="Name" class="form-control" placeholder="e.g. Grand Prix Summer Qualifier" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Description" class="form-label fw-semibold">Description</label>
+                        <textarea asp-for="Description" class="form-control" rows="3" placeholder="Describe the track, rules, and entry criteria..."></textarea>
+                        <span asp-validation-for="Description" class="text-danger"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Date" class="form-label fw-semibold">Event Date</label>
+                            <input asp-for="Date" type="date" class="form-control" />
+                            <span asp-validation-for="Date" class="text-danger"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="MaxCapacity" class="form-label fw-semibold">Max Participant Capacity</label>
+                            <input asp-for="MaxCapacity" type="number" class="form-control" placeholder="100" />
+                            <span asp-validation-for="MaxCapacity" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Location" class="form-label fw-semibold">Location / Circuit</label>
+                        <input asp-for="Location" class="form-control" placeholder="e.g. Kyalami Grand Prix Circuit" />
+                        <span asp-validation-for="Location" class="text-danger"></span>
+                    </div>
+
+                    <!-- Azure Blob Storage Image Upload Field -->
+                    <div class="mb-4">
+                        <label asp-for="ImageFile" class="form-label fw-semibold">Event Image Banner (Azure Blob Storage)</label>
+                        <input asp-for="ImageFile" type="file" class="form-control" accept="image/*" />
+                        <small class="form-text text-muted">Uploaded file will be stored in Azure Blob Storage via the Web API.</small>
+                        <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="Events" class="btn btn-outline-secondary px-4 fw-semibold">Cancel</a>
+                        <button type="submit" class="btn btn-success px-4 fw-bold">Create Event</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

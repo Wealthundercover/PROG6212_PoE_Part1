@@ -1,0 +1,41 @@
+﻿@model RaceDay.MVC.Models.UserViewModel
+
+@{
+    ViewData["Title"] = "My Profile";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">My Profile</h2>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h4 class="card-title mb-3">Participant Details</h4>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-3">User ID:</dt>
+                <dd class="col-sm-9">@Model.UserId</dd>
+
+                <dt class="col-sm-3">Username:</dt>
+                <dd class="col-sm-9">@(Model.Username ?? "N/A")</dd>
+
+                <dt class="col-sm-3">Email:</dt>
+                <dd class="col-sm-9">@(Model.Email ?? "N/A")</dd>
+            </dl>
+        </div>
+    </div>
+</div>

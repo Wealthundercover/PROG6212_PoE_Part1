@@ -1,0 +1,98 @@
+@{
+    ViewData["Title"] = "Organiser Dashboard";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2 class="fw-bold text-dark">Organiser Dashboard</h2>
+        <p class="text-muted mb-0">Overview of your race events and participant activity.</p>
+    </div>
+    <a asp-action="CreateEvent" class="btn btn-primary btn-lg shadow-sm">
+        <i class="bi bi-plus-circle me-1"></i> + Create New Event
+    </a>
+</div>
+
+<!-- Key Stat Cards -->
+<div class="row g-3 mb-4">
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm bg-primary text-white">
+            <div class="card-body">
+                <h6 class="text-uppercase text-white-50 fw-bold">Active Events</h6>
+                <h2 class="display-6 fw-bold my-1">4</h2>
+                <small class="text-white-50">2 scheduled this month</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm bg-success text-white">
+            <div class="card-body">
+                <h6 class="text-uppercase text-white-50 fw-bold">Total Enrolments</h6>
+                <h2 class="display-6 fw-bold my-1">128</h2>
+                <small class="text-white-50">+14% from last race</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm bg-warning text-dark">
+            <div class="card-body">
+                <h6 class="text-uppercase text-muted fw-bold">Pending Approval</h6>
+                <h2 class="display-6 fw-bold my-1">5</h2>
+                <small class="text-muted">Participant registration reviews</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm bg-info text-white">
+            <div class="card-body">
+                <h6 class="text-uppercase text-white-50 fw-bold">Completed Races</h6>
+                <h2 class="display-6 fw-bold my-1">12</h2>
+                <small class="text-white-50">Results published</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Actions Hub -->
+<div class="row g-4 mb-4">
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <h5 class="fw-bold mb-3">Quick Actions</h5>
+                <div class="d-grid gap-2">
+                    <a asp-action="Events" class="btn btn-outline-primary text-start fw-semibold py-2">
+                        📋 View & Manage All Events
+                    </a>
+                    <a asp-action="CreateEvent" class="btn btn-outline-success text-start fw-semibold py-2">
+                        ➕ Add New Event & Banner (Azure Blob)
+                    </a>
+                    <a asp-action="Results" class="btn btn-outline-dark text-start fw-semibold py-2">
+                        ⏱️ Record / Upload Race Results
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activity Placeholder -->
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <h5 class="fw-bold mb-3">System Overview</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        API Connection Status
+                        <span class="badge bg-success rounded-pill">Connected (localhost:5272)</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Storage Engine
+                        <span class="badge bg-primary rounded-pill">Azure Blob Storage</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Active Role
+                        <span class="badge bg-warning text-dark rounded-pill">Organiser</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

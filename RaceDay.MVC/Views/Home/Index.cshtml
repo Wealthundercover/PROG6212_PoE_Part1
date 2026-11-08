@@ -1,0 +1,18 @@
+﻿@model IEnumerable<RaceDay.MVC.Models.EventViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center py-5 bg-light rounded-3 mb-5 shadow-sm">
+    <div class="container-fluid py-3">
+        <h1 class="display-4 fw-bold text-dark">Welcome to RaceDay</h1>
+        <p class="col-md-8 fs-4 mx-auto text-muted">
+            Your ultimate platform for discovering upcoming races, managing events, and tracking participant enrolments.
+        </p>
+        <div class="mt-4">
+            <a asp-controller="Participant" asp-action="Index" class="btn btn-primary btn-lg px-4 me-2 fw-bold">Browse Available Races</a>
+            <a asp-controller="Organiser" asp-action="Dashboard" class="btn btn-outline-dark btn-lg px-4 fw-bold">Organiser Portal</a>
+        </div>
+    </div>
+</div>

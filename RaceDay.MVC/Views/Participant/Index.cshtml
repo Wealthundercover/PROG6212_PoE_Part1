@@ -1,0 +1,62 @@
+﻿@model IEnumerable<RaceDay.MVC.Models.EventViewModel>
+
+@{
+    ViewData["Title"] = "Available Events";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Available Events</h2>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td class="fw-bold">@item.Name</td>
+                            <td>@item.Date.ToString("yyyy-MM-dd HH:mm")</td>
+                            <td>@item.Location</td>
+                            <td class="text-center">
+                                <form asp-action="Register" method="post" class="d-inline">
+                                    <input type="hidden" name="eventId" value="@item.Id" />
+                                    <button type="submit" class="btn btn-primary btn-sm px-3">Register</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4" class="text-center text-muted py-4">No events available at the moment.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
