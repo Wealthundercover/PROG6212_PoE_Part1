@@ -90,3 +90,19 @@ Part 2 implements the complete backend RESTful Web API using **.NET 8** and **En
 * **Microsoft.** (2024) *Overview of Entity Framework Core*. Available at: https://learn.microsoft.com/en-us/ef/core/ (Accessed: 12 October 2026).
 * **Richardson, L. and Ruby, S.** (2007) *RESTful Web Services*. Sebastopol: O'Reilly Media.
 * **SmartBear Software.** (2024) *Swagger / OpenAPI Documentation*. Available at: https://swagger.io/docs/ (Accessed: 12 October 2026).
+
+- **Dahl, R.** (2020) *Building RESTful APIs with C# 9 and .NET 5*. 2nd edn. Birmingham: Packt Publishing.
+- **Docker.** (2024) *Docker Documentation*. Available at: https://docs.docker.com/ (Accessed: 8 November 2026).
+- **Elmasri, R. and Navathe, S.B.** (2016) *Fundamentals of Database Systems*. 7th edn. Boston: Pearson.
+- **Freeman, A.** (2022) *Pro ASP.NET Core 6: Develop Cloud-Ready Web Applications Using MVC, Blazor, and Web API*. 9th edn. New York: Apress.
+- **GitHub Actions.** (2024) *Understanding GitHub Actions*. Available at: https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions (Accessed: 2 November 2026).
+- **Microsoft.** (2024) *ASP.NET Core Web API documentation*. Available at: https://learn.microsoft.com/en-us/aspnet/core/web-api/ (Accessed: 4 November 2026).
+- **Microsoft.** (2024) *Overview of ASP.NET Core MVC*. Available at: https://learn.microsoft.com/en-us/aspnet/core/mvc/overview (Accessed: 8 November 2026).
+- **Microsoft.** (2024) *Overview of Entity Framework Core*. Available at: https://learn.microsoft.com/en-us/ef/core/ (Accessed: 4 November 2026).
+- **Microsoft.** (2024) *Quickstart: Azure Blob Storage client library for .NET*. Available at: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-dotnet (Accessed: 8 November 2026).
+- **Microsoft.** (2024) *Session and state management in ASP.NET Core*. Available at: https://learn.microsoft.com/en-us/aspnet/core/fundamentals/app-state (Accessed: 8 November 2026).
+- **Microsoft.** (2024) *SQL Server Technical Documentation*. Available at: https://learn.microsoft.com/en-us/sql/sql-server/ (Accessed: 2 November 2026).
+- **OpenAPI Initiative.** (2021) *OpenAPI Specification v3.1.0*. Available at: https://spec.openapis.org/oas/v3.1.0 (Accessed: 2 November 2026).
+- **Pressman, R.S. and Maxim, B.R.** (2020) *Software Engineering: A Practitioner's Approach*. 9th edn. New York: McGraw-Hill Education.
+- **Richardson, L. and Ruby, S.** (2007) *RESTful Web Services*. Sebastopol: O'Reilly Media.
+- **SmartBear Software.** (2024) *Swagger / OpenAPI Documentation*. Available at: https://swagger.io/docs/ (Accessed: 4 November 2026).
