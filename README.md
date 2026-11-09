@@ -1,4 +1,4 @@
-# PROG6212_PoE_(Part 1 & Part 2)
+# PROG6212 PoE - Part 1, Part 2 & Part 3
 
 # RaceDay - Full-Stack Event Management Platform
 
@@ -17,7 +17,6 @@ All planning and database assets are located in the `/docs` folder:
 * `RaceDay_Database_Script.sql`: Complete SQL Server script with schema creation, constraints, and realistic seed data.
 
 ## PoE Part 2 - Web API Implementation & Database Integration
-
 Part 2 implements the complete backend RESTful Web API using **.NET 8** and **Entity Framework Core**, backing the planning and database design established in Part 1.
 
 ### Key Features Implemented
@@ -28,6 +27,14 @@ Part 2 implements the complete backend RESTful Web API using **.NET 8** and **En
 - **EF Core Database Migrations & Seeding:** Configured `RaceDayDbContext` with full navigation properties, relationships, SQL Server LocalDB connection, and seed data.
 - **OpenAPI / Swagger Integration:** Configured Swagger UI in `Program.cs` for interactive API documentation and endpoint testing.
 
+## PoE Part 3 - MVC Frontend, Azure Blob Storage & Docker
+### Key Features Implemented
+- **ASP.NET Core MVC Application:** Clean separation of concerns where the MVC web front-end consumes the Part 2 API for all data operations without direct database access.
+- **Session-Based Authentication:** Maintains user state and role permissions securely across requests, restricting unauthorized access to protected pages.
+- **Organiser Interface:** Fully functional dashboard, event management (with image upload), category management, enrolment viewing, and results entry.
+- **Participant Interface:** Event browsing, detailed view with image rendering, event registration, personal enrolments view, results history with finish positions (e.g., 47th out of 312 finishers), and profile management.
+- **Azure Blob Storage:** Event banner images and profile pictures are uploaded via the MVC application through the API and stored securely in Azure Blob Storage.
+- **Docker Containerisation:** The application is fully containerised using a robust `Dockerfile` following best practices for .NET applications.
 ### API Endpoints Summary
 
 | HTTP Method | Endpoint | Description | Access Level |
@@ -57,6 +64,7 @@ Part 2 implements the complete backend RESTful Web API using **.NET 8** and **En
 ### API Testing Screenshots
 ![Swagger Endpoints](docs/screenshots/Swagger.UI.png)
 ![API Events Test](docs/screenshots/API%20EVENTS%20TEST.png)
+
 ## Video Presentation part 1
 [Click here to watch the Video Presentation](https://youtube.com/shorts/NRz5mpCMPxc?si=b0Ifq47R1GCRHoBg)
 
