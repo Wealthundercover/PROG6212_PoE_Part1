@@ -67,11 +67,13 @@ Part 2 implements the complete backend RESTful Web API using **.NET 8** and **En
 ![API Events Test](docs/screenshots/API%20EVENTS%20TEST.png)
 
 ## Video Presentation part 1
-[Click here to watch the Video Presentation](https://youtube.com/shorts/NRz5mpCMPxc?si=b0Ifq47R1GCRHoBg)
+[Click here to watch the Video Presentation] (https://youtube.com/shorts/NRz5mpCMPxc?si=b0Ifq47R1GCRHoBg)
 
 ## Video Presentation part 2
 [Click here to watch the Video Presentation] (https://youtu.be/4TQ0Lp1THFI?si=le0M6R6CrGg0Cfrz)
 
+## Video Presentation part 3
+[Click here to watch the Video Presentation] ()
 
 ## CI/CD Pipeline
 ![Build Status](../../workflows/docs-validation.yml/badge.svg)
