@@ -49,17 +49,18 @@ Part 2 implements the complete backend RESTful Web API using **.NET 8** and **En
 | `GET` | `/api/results` | Fetch race results including enrolment details | Public |
 | `POST` | `/api/results` | Capture race outcomes and completion times | Organiser |
 
-### Getting Started & Running the API
+## Getting Started & Running the Application
 
-1. **Prerequisites:**
-   - .NET 8.0 SDK
-   - Visual Studio 2022 / 2026 with the **ASP.NET and web development** workload
-   - SQL Server Express / LocalDB
+### 1. Prerequisites
+- .NET 8.0 SDK
+- Visual Studio 2022 / 2026 with **ASP.NET and web development** workload
+- SQL Server Express / LocalDB
+- Docker Desktop (for containerisation)
 
-2. **Database Setup:**
-   Open the **Package Manager Console** in Visual Studio and run:
-   ```powershell
-   Update-Database
+### 2. Running Locally via Visual Studio
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/Wealthundercover/PROG6212_PoE_Part1.git](https://github.com/Wealthundercover/PROG6212_PoE_Part1.git)
    
 ### API Testing Screenshots
 ![Swagger Endpoints](docs/screenshots/Swagger.UI.png)
